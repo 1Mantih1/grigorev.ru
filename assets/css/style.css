@@ -2,3 +2,33 @@ nav a.active {
     font-weight: bold;
     color: #f00;
 }
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
+
+/* Стили для планшетов */
+@media (max-width: 1024px) {
+    header nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 10px 15px;
+    }
+}
